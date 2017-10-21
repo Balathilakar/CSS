@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document  04-11-2012*/
+ 
+html, body, div, span, applet, object, iframe, paynow-toolbar, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label{ margin: 0; padding: 0; border: 0; outline: 0;  vertical-align: baseline; background: transparent; color:#000; }
+
+
+
+body { color:#000; background:#fff;  height:100%;z-index:0;width:750px;}
+
+.innerShell{display:block;overflow:none;margin-bottom:10px;}
+.innerShellTop,.page-title{clear:both;}
+div.innerShell{}
+div.innerShell ul{}
+ .notprintable, span.notprintable, .paynow-toolbar, #nav_tertiary{display:none;}
+  
+h1#page_title{margin-bottom: 2em;text-indent: -2000em;}
+
+ .one, .two, .three, .four{}
+#header_wrapper, #footer_wrapper { display:none; background: transparent; background-color: none; margin-top:100%; }
+#header_wrapper a, #footer_wrapper a, #oo_tab{
+	display:none !important;
+} 
+
+ol, ul { list-style: none;display:block; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+
+/*-------- supersprite declaration ---------*/
+#innerWrapperBottom, #innerWrapperTop, #welcomeBar, #agentButton, .tabItem a, #content_wrapperBottom, #content_wrapperTop, .content_wrapperBottom, .content_wrapperTop, #iconBarTop, #iconBarBottom, #iconBarMiddle ul li a, #sitemapLinksTop, #sitemapLinksBottom, a#agentButton span, #sidebarNav ul li a, #salesBlockBottom, #PCIOverlay, #warningBlock, .prospectads ul li, .sectionWrapTop { background:transparent; }
+
+
+h1,h2,h3,h4,h5,h6{text-indent:0px;}
+h1 { font-size:1.6em; font-weight:bold; margin-bottom:10px;}
+
+h2 { border-bottom:1px dotted #77B53C; color:#666; font-size:1.4em; height:20px; margin:37px 0 10px; padding:0 0 10px; text-indent:0; font-weight:bold; }
+
+h3 { color:#666; font-size:1.2em; font-weight:bold; margin-bottom:10px; }
+
+h4 { color:#666; font-weight:bold; font-size:1.1em; }
+
+h5 { color:#666; font-size:1.1em; font-weight:bold; }
+
+h6 { }
+
+p { line-height:1.4em; margin-bottom:12px; }
+
+a:link, a:visited, a:hover, a:active { text-decoration:underline; }
+.help, a.help{display:none;}
+
+address { font-style:normal; line-height:1.4 em; font-size:.9em; }
+
+
+
+li { line-height:1.6em; }
+
+
+
+/*------------ Classes -----------------*/
+
+
+.label { display:block; float:left; font-weight:bold; text-align:right; }
+
+.labelSpecial {float:left; width:85%; text-align:right; font-weight:bold;}
+
+
+
+
+/*---------------- IDs ------------*/
+
+#innerShellMiddle, #innerShellBottom , #innerShellTop{ background:transparent; }
+
+#content_wrapper{ background:transparent; padding:20px;margin:4px; width:650px;}
+
+
+
+/*------------- Specfic selectors -------------*/
+
+
+
+/*Click to call*/
+.click-to-call-toolbar { display:none !important;}
+
+
+
+#progressBar {display:none;}
+
+
+
+ul { width:100%; float:left; display:block; margin-bottom:5px;}
+li.one,li.two {float:left; width:40%; margin-left:4px;}
+li.one{font-weight:bold;}
+
+
+
+a.help,th a.help,.label a.help, li a.help { display:none; }
+
+
+a.ineligible { float:left; }
+
+#otherAmt { }
+
+
+
+#buttons { display:none;}
+
+
+/*-------------Form elements ------------------*/
+input, select, textarea { border:none; }
+
+/*-------------labels--------------*/
+label { font-weight:bold; float:left; width:35%; text-align:right; margin:8px 3px 0 0; }
+
+label.error { color:#990000; background:transparent; border:none; font-size:1em; line-height:1.4em; /**/ }
+
+
+
+/*--------------Buttons----------------- */
+/* -------- Base settings for all .buttons -----------*/
+.button {display:none; background:transparent; }
+
+/* -------- Specific settings for each button, including hover ------------*/
+
+/*----------- buttonSet overrides -------------*/
+.buttonSet {  display:none; width:auto;background:transparent;}
+
+
+/*-----------------Section Specific Button Rules -----------*/
+
+#warningBlock { width:100px; height:100px; display:block; overflow:hidden; background-position:-403px -294px; float:left; margin-top:15px; }
+.warning h3 { color:#900; float:left; margin:30px 0 10px 0; }
+
+.warning p { float:left; width:400px; }
+
+
+
+.button { display:none;}
+
+
+.errorMsg {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #CD1F00;
+	margin: 12px 0 6px 	
+}
+
+
+.transparent {
+        /* Required for IE 5, 6, 7 */
+        /* ...or something to trigger hasLayout, like zoom: 1; */
+        width: 100%; 
+
+        /* Theoretically for IE 8 & 9 (more valid) */
+        /* ...but not required as filter works too */
+        /* should come BEFORE filter */
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+        /* This works in IE 8 & 9 too */
+        /* ... but also 5, 6, 7 */
+        filter: alpha(opacity=50);
+
+        /* Older than Firefox 0.9 */
+        -moz-opacity:0.5;
+
+        /* Safari 1.x (pre WebKit!) */
+        -khtml-opacity: 0.5;
+
+        /* Modern!
+        /* Firefox 0.9+, Safari 2?, Chrome any?
+        /* Opera 9+, IE 9+ */
+        opacity: 0.5;
+}
+/* ELEMENTS FROM OTHER STYLE SHEETS */ 
+#header {
+    background: transparent !important;
+    height: auto;
+    margin: 0 auto;
+    width: 951px;
+}
+#actions,#nav,#nav_secondary, #search,#help{display: none !important;}
+.input{display:none;}
+#outterShell, #outterShellTop, #outterShellBottom {background:none;}
+
+
+.ui-popup-container, .ui-loader {
+    display: none !important;
+}

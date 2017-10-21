@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.pn-credit-card-img,.pn-credit-card-img-v {
+	height: 28px;
+	width: 154px;
+	display: inline-block;
+	background:	url(https://amfamcommon-dev.application.amfam.com/AmfamCommon/site-assets/apps/img/credit-cards.png) top left no-repeat;
+	background-repeat: no-repeat;
+	background-size: 100px 15px;
+}
+
+.pn-credit-card-img.mastercard,.pn-credit-card-img-v.mastercard {
+	background-position: -25px;
+	width: 30px;
+}
+
+.pn-credit-card-img.visa,.pn-credit-card-img-v.visa {
+	background-position: -53px;
+	width: 28px;
+}
+
+.pn-credit-card-img.amex,.pn-credit-card-img-v.amex {
+	background-position: -81px;
+	width: 29px;
+}
+
+.pn-credit-card-img.discover,.pn-credit-card-img-v.discover {
+	background-position: 2px;
+	width: 29px;
+}
+
+.pn-credit-card-img.unknown,.pn-credit-card-img-v.unknown {
+	background: url(https://amfamcommon-dev.application.amfam.com/AmfamCommon/site_files/images/apps/icons/ico_notice.gif) no-repeat;
+	padding-left:20px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #953b39;
+	width: 38%;
+	height: 100%;
+}
+
+.pn-credit-card-img.unknown:before,.pn-credit-card-img-v.unknown:before {
+	font-family: 'icomoon';
+	content: "\e609";
+	font-size: 36px;
+	color: #f7b00d;
+	font-weight: normal;
+	margin-right: -30px;
+}
+
+.hidden{display:none!important;visibility:hidden!important}
+

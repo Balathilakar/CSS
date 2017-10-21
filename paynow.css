@@ -1,0 +1,2489 @@
+@charset "utf-8";
+/* CSS Document */
+/* 2012 Feb 22*/
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,html,label,table,tr,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,a img,:link img,:visited img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+q:before,q:after{content:'';}
+body {
+	font-size: 10px;
+}
+@media only screen and (min-width: 768px){
+	body{
+			position:relative;
+	}
+}
+#wrapper #container {
+  background-color: #fff;
+ /* margin: 0 1em; */
+	width: 755px;
+	padding-bottom: 75px;
+}
+.paynow-toolbar {
+  display: block;
+  height: 27px;
+  list-style: none outside none;
+  margin: 10px;
+  overflow: hidden;
+  width: auto;
+  float: right;
+}
+.paynow-toolbar li {
+  float: left;
+  height: 27px;
+  width: auto;
+}
+.paynow-toolbar li a {
+  background: url('https://apps.amfam.com/AmfamCommon/site-assets/apps/images/paynow-toolbar.png') no-repeat scroll 0 0 transparent;
+  color: #999;
+  display: block;
+  font: 12px/12px Arial, Helvetica, sans-serif;
+  height: 27px;
+  text-decoration: none;
+  text-indent: -2000em;
+}
+.paynow-toolbar .clickToCall a,
+.paynow-toolbar .clickToCall a:link,
+.paynow-toolbar .clickToCall a:visited {
+  background-position: 0 0;
+  width: 131px;
+}
+.paynow-toolbar .clickToCall a:hover,
+.paynow-toolbar .clickToCall a:focus {
+  background-position: 0 -27px;
+}
+.paynow-toolbar .needHelp a,
+.paynow-toolbar .email a:link,
+.paynow-toolbar .email a:visited {
+  background-position: -131px 0;
+  width: 96px;
+}
+.paynow-toolbar .needHelp a:hover,
+.paynow-toolbar .email a:focus {
+  background-position: -131px -27px;
+}
+.paynow-toolbar .print a,
+.paynow-toolbar .print a:link,
+.paynow-toolbar .print a:visited {
+  background-position: -227px 0;
+  width: 36px;
+}
+.paynow-toolbar .print a:hover,
+.paynow-toolbar .print a:focus {
+  background-position: -227px -27px;
+}
+.paynow-toolbar .font_small a,
+.paynow-toolbar .font_small a:link,
+.paynow-toolbar .font_small a:visited {
+  background-position: -263px 0;
+  width: 14px;
+}
+.paynow-toolbar .font_small a:hover,
+.paynow-toolbar .font_small a:focus {
+  background-position: -263px -27px;
+}
+.paynow-toolbar .font_medium a,
+.paynow-toolbar .font_medium a:link,
+.paynow-toolbar .font_medium a:visited {
+  background-position: -276px 0;
+  width: 12px;
+}
+.paynow-toolbar .font_medium a:hover,
+.paynow-toolbar .font_medium a:focus {
+  background-position: -276px -27px;
+}
+.paynow-toolbar .font_large a,
+.paynow-toolbar .font_large a:link,
+.paynow-toolbar .font_large a:visited {
+  background-position: -288px 0;
+  width: 16px;
+}
+.paynow-toolbar .font_large a:hover,
+.paynow-toolbar .font_large a:focus {
+  background-position: -288px -27px;
+}
+.paynow-toolbar .rightside {
+  background: url('/AmfamCommon/site-assets/apps/images/paynow-toolbar.png') no-repeat scroll -303px 0 transparent;
+  width: 5px;
+}
+
+/* ---- Headers ---- */
+h1 {
+	display: block;
+	height: 28px;
+	overflow: hidden;
+	float: left;
+	margin: 22px 0 0 5px;
+	padding: 0;
+	text-indent: -2000em;
+	background: url('/AmfamCommon/site-assets/apps/images/paynow_headers.png') no-repeat;
+}
+.start h1 {
+	width: 167px;
+	background-position: 0 0;
+	height: 25px;
+}
+.enterPayment h1 {
+	background-position: 0 -21px;
+  width: 268px;
+}
+.verification h1 {
+	background-position: 0 -46px;
+  width: 268px;
+}
+.confirmation h1 {
+	background-position: 0 -71px;
+  width: 331px;
+}
+
+/*---- Outter Content Shell ----*/
+#outterShell {
+	display: block;
+	clear: both;
+  height: auto;
+  width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+	background: url('/AmfamCommon/site-assets/apps/images/payNow_outterShell_repeator.png') center top repeat-y;
+}
+#outterShellBottom {
+	display: block;
+	clear: both;
+  height: auto;
+  width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+	background: url('/AmfamCommon/site-assets/apps/images/payNow_outterShell_bottom.png') center bottom no-repeat
+}
+#outterShellTop {
+	display: block;
+	clear: both;
+  height: auto;
+  width: 661px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 42px 47px;
+	background: url('/AmfamCommon/site-assets/apps/images/payNow_outterShell_top.png') center top no-repeat;
+	min-height: 300px;
+}
+.innerShell {
+	display: block;
+	clear: both;
+  height: auto;
+  width: 639px;
+  margin: 15px auto 20px;
+  overflow: hidden;
+  padding: 0;
+	background: url('/AmfamCommon/site-assets/apps/images/payNow_innerShell_repeator.png') center top repeat-y;
+}
+.innerShellBottom {
+	display: block;
+	clear: both;
+  height: auto;
+  width: 639px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+	background: url('/AmfamCommon/site-assets/apps/images/payNow_innerShell_bottom.png') center bottom no-repeat
+}
+.innerShellTop {
+	display: block;
+	clear: both;
+  height: auto;
+  width: 575px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 32px 35px;
+	background: url('/AmfamCommon/site-assets/apps/images/payNow_innerShell_top.png') 0 top no-repeat;
+}
+
+/*---- Progress Bar ----*/
+#progressBar {
+	width: 642px;
+	height: 69px;
+	display: block;
+	overflow: hidden;
+	padding: 17px 0 0 19px;
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar_bg.png') 0 0 no-repeat;
+}
+#progressBar li {
+	height: 42px;
+	width: auto;
+	display: block;
+	overflow: visible;
+	float: left;
+	padding: 0;
+	list-style: none;
+	font-size: 1.1em !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+#progressBar .progressBar_past {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar_lightBlue.jpg') repeat-x;
+	width: auto;
+	color: #73b6d1;
+}
+#progressBar .progressBar_present {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar_blue.jpg') repeat-x;
+	width: auto;
+	color: #007bb2;
+}
+#progressBar .progressBar_future {
+	color: #aeaeae;
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar_white.jpg') repeat-x;
+	width: auto;
+}
+#endCap_left_present {
+	height: 42px;
+	width: 9px;
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat 0px 0px;
+	display: block;
+	float: left;
+	padding: 0;
+}
+#endCap_left_past {
+	height: 42px;
+	width: 9px;
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -14px 0px;
+	display: block;
+	float: left;
+	padding: 0;
+}
+.endCap_right_future {
+	height: 42px;
+	width: 10px;
+	display: block;
+	float: left !important;
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -236px 0px;
+	padding: 0;
+	overflow: hidden;
+}
+.endCap_right_present {
+	height: 42px;
+	width: 10px;
+	display: block;
+	float: left !important;
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -249px 0px;
+	padding: 0;
+	overflow: hidden;
+}
+.oneLine {
+	display: block;
+  float: left;
+  font-size: 17px;
+  height: 30px;
+  overflow: hidden;
+  padding: 14px 0 0 5px;
+  text-align: center;
+}
+.twoLine {
+	padding: 8px 0 0 5px;
+	display: block;
+	overflow: hidden;
+	height: 30px;
+	float: left;
+	text-align: center;
+	line-height: 0.9em;
+}
+.two .oneLine,
+.two .twoLine{
+	width: 263px;
+}
+.three .oneLine,
+.three .twoLine {
+	width: 169px;
+}
+.four .oneLine,
+.four .twoLine {
+	width: 123px;
+}
+.five .oneLine,
+.five .twoLine {
+	width: 84px;
+}
+.arrow_past-past {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -31px 0px;
+	height: 42px;
+	width: 30px;
+	display: block;
+	float: left;
+	padding: 0;
+	float:left;
+}
+.arrow_past-present {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -68px 0px;
+	height: 42px;
+	width: 30px;
+	display: block;
+	float: left;
+	padding: 0;
+	float:left;
+}
+.arrow_present-present {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -75px 0px;
+	height: 42px;
+	width: 30px;
+	display: block;
+	float: left;
+	padding: 0;
+	float:left;
+}
+.arrow_present-future {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -145px 0px;
+	height: 42px;
+	width: 30px;
+	display: block;
+	float: left;
+	padding: 0;
+	float:left;
+}
+.arrow_future-future {
+	background: url('/AmfamCommon/site-assets/apps/images/progressBar.png') no-repeat -182px 0px;
+	height: 42px;
+	width: 30px;
+	display: block;
+	float: left;
+	padding: 0;
+	float:left;
+}
+.two .arrow_present-future {
+	padding-right: 1px;
+}
+.four .arrow_present-future {
+	padding-right: 1px;
+}
+.five .arrow_present-future {
+	padding-right: 2px;
+}
+
+/* ---- Page Styles ---- */
+h2 {
+	font-size: 1.6em;
+	color: #77b53c;
+	font-weight:bold;
+}
+.innerShell h2 {
+	padding-bottom: 12px;
+}
+
+/* Errors and help */
+.ca-hinter {
+  background:none !important;
+}
+.ca-hinter-help,
+.ca-hinter-error {
+  width: 160px !important;
+  z-index:100;
+}
+.ca-hinter-help .hd {
+  width:160px !important;
+  height:19px;
+  background:url(/AmfamCommon/site-assets/apps/images/support/help-hd.gif) top left no-repeat;
+}
+.ca-hinter-help .bd {
+  width:154px !important;
+  background:url(/AmfamCommon/site-assets/apps/images/support/help-bd.gif) top left repeat-y;
+  color:#000;
+  padding:0 3px;
+  line-height:1.3em;
+}
+.ca-hinter-help .ft {
+  width:160px;
+  background:url(/AmfamCommon/site-assets/apps/images/support/help-ft.gif) bottom left no-repeat;
+  height:10px;
+}
+.ca-hinter-error .hd {
+  width:160px !important;
+  height:19px;
+  background:url(/AmfamCommon/site-assets/apps/images/support/error-hd.gif) top left no-repeat;
+}
+.ca-hinter-error .bd {
+  width:154px !important;
+  background:url(/AmfamCommon/site-assets/apps/images/support/error-bd.gif) top left repeat-y;
+  color:#fff;
+  padding:0 3px;
+  line-height:1.3em;
+}
+.ca-hinter-error .ft {
+  width:160px;
+  background:url(/AmfamCommon/site-assets/apps/images/support/error-ft.gif) bottom left no-repeat;
+  height:10px;
+}
+a.help {
+  background: url(/AmfamCommon/site-assets/apps/images/icon_help.png) no-repeat scroll 10px 2px transparent;
+  display: inline-block;
+  float: left;
+  height: 24px;
+  overflow: hidden;
+  text-indent: -2000em;
+  width: 42px;
+}
+.error a.help {
+  background: url(/AmfamCommon/site-assets/apps/images/error_icon_help.png) no-repeat scroll 10px 2px transparent;
+}
+a.help {
+	width: 32px;
+}
+.row a.help {
+	margin-top:5px;
+}
+.verification a.help {
+  width: 19px;
+  margin: 7px 0 0 0;
+  background-position: 0 0;
+}
+li.row {
+  list-style-type:none;
+}
+.row .header a.help,
+.row .footer a.help,
+.row .labelSet .one a.help {
+	margin-top:0;
+}
+a.inlineHelp {
+	background: url(/AmfamCommon/site-assets/apps/images/icon_help.png) no-repeat scroll right -1px transparent;
+	display: inline-block;
+	padding-right: 21px;
+}
+.error a.inlineHelp {
+	background: url(/AmfamCommon/site-assets/apps/images/error_icon_help.png) no-repeat scroll right -1px transparent;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin: 5px 15px 10px 18px;
+}
+p.disclaimer {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin: 25px 0 5px;
+	font-style: italic;
+}
+.innerShell p {
+  margin: 5px 0 25px 0;
+}
+.row {
+	width: auto;
+	clear: both;
+  margin: 0 15px 0 18px;
+	display: block;
+	height: auto;
+	padding-top: 27px;
+}
+.error {
+	display: block;
+	overflow: hidden;
+	/* background: #fe9 url('/AmfamCommon/site-assets/apps/images/icon_exclam1.gif') right top no-repeat; */
+	margin: 5px 0;
+	color: #000 !important;
+	  -moz-border-radius: 0.75em;
+	border-radius: 0.75em;
+}
+.error label strong,
+.error label,
+.labelSet.error .one {
+  color: #000 !important;
+}
+.innerShell .row {
+	margin: 0;
+	float: left;
+}
+.header {
+	background: url('/AmfamCommon/site-assets/apps/images/icon_dots.png') repeat-x bottom;
+	overflow: hidden;
+	color: #77b53c;
+}
+.footer {
+	border-bottom: 0;
+	padding-bottom: 30px;
+}
+.labelSet {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	width: 628px;
+	margin: 0;
+	clear: both;
+}
+.labelSet li {
+	display: block;
+	float: left;
+	height: auto;
+	font: 1.2em/1.4em Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: 14px 0 0;
+}
+.innerShell .labelSet li {
+	padding: 0 0 4px;
+	width: 164px;
+}
+.labelSet li.narrow {
+	padding-top: 4px;
+}
+.labelSet .one,
+.labelset .one label {
+	width: 245px;
+	font: 1.2em/1.5em Arial, Helvetica, sans-serif;
+	color: #666;
+	font-weight: bold;
+	white-space: pre-wrap;
+}
+.labelSet .two {
+	width: 212px;
+}
+.labelSet .two.radioList {
+	padding-top: 3px;
+	width: 325px;
+}
+.row.creditCard .labelSet .two {
+	width: 325px;
+}
+.mcVisa {
+	background: url('/AmfamCommon/site-assets/apps/images/img_mcVisa.png') 144px 9px no-repeat;
+	margin-top: 5px;
+  background-position: right;
+	overflow: visible;
+}
+.error .mcVisa {
+	background: url('/AmfamCommon/site-assets/apps/images/error_img_mcVisa.png') 125px 7px no-repeat;
+}
+.twoColumns {
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid #e3f0d6;
+	padding: 3px 0;
+}
+.twoColumns.header {
+	border: none;
+}
+.twoColumns li {
+	display: block;
+	float: left;
+	height: auto;
+	font: 1.2em/1.4em Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: 7px 0;
+}
+.twoColumns li h3 {
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #666;
+	float: left;
+	padding-top: 4px;
+}
+.twoColumns .one {
+	width: 300px;
+}
+.twoColumns .two {
+	width: auto;
+}
+.threeColumns.header li h3 {
+	font-weight:bold;
+	font-size: 1.1em;
+	color: #77b53c;
+}
+.threeColumns.header {
+	border: none;
+}
+.threeColumns {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid #e3f0d6;
+	padding: 3px 0;
+}
+.threeColumns li {
+	display: block;
+	float: left;
+	height: auto;
+	font: 1.2em/1.4em Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: 7px 0;
+}
+.threeColumns .one {
+	width: 275px;
+}
+.threeColumns .two {
+	width: 150px;
+	float: left;
+   margin-top: 3em;
+   margin-left: -25em;
+}
+.threeColumns .three {
+	width: 200px;
+	text-align:right;
+}
+.threeColumns.footer li h3 {
+	font-weight:bold;
+	font-size: 1.1em;
+	color: #77b53c;
+	float: left;
+	padding-top: 4px;
+}
+.threeColumns.footer {
+	border-bottom: none;
+}
+.threeColumns.footer .one {
+	width: 100%;
+}
+.threeColumns.footer .two {
+	width: 100px;
+}
+.threeColumns.footer .three {
+	width: 150px;
+	float: right;
+}
+.threeColumns {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid #e3f0d6;
+	padding: 3px 0;
+}
+.threeColumns li {
+	display: block;
+	float: left;
+	height: auto;
+	font: 1.2em/1.4em Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: 7px 0;
+}
+.fourColumns.header li h3 {
+	font-weight:bold;
+	font-size: 1.1em;
+	color: #77b53c;
+	float: left;
+	padding-top: 4px;
+}
+.fourColumns.header {
+	border: none;
+	box-shadow: 0 1px 0;
+	margin-top: -4em;
+}
+.fourColumns {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid #e3f0d6;
+	padding: 3px 0;
+}
+.fourColumns li {
+	display: block;
+	float: left;
+	height: auto;
+	font: 1.2em/1.4em Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding: 7px 0;
+}
+.fourColumns .one {
+  width: 7em;
+}
+.fourColumns .two {
+	width: 10em;
+}
+.fourColumns .three {
+	width: 10em;
+	text-align:left;
+	padding: 7px 0 0;
+}
+.fourColumns .four {
+	width: 20em;
+	text-align:right;
+}
+
+/* ---- Form Styles ---- */
+#startForm {
+	display: block;
+	width: auto;
+	padding: 30px 0 0;
+	height:auto;
+	overflow: hidden;
+	clear:both;
+}
+label {
+	display: block;
+	float: left;
+	height: auto;
+	width: 200px;
+	color: #666;
+	font-weight:bold;
+	padding: 6px 7px 0 0;
+}
+.labelSet label {
+	float: left;
+  padding-right: 0;
+  width: auto;
+	height:auto;
+}
+.innerShell label {
+	width: 170px;
+}
+.confirmation .innerShell #dobConfirmation,
+.verification .innerShell label {
+	font-size: 1.1em;
+  padding: 12px 11px 0 0;
+  width: auto;
+}
+label strong {
+	display: block;
+	float: right;
+	text-align:right;
+	height: auto;
+	font: 1.4em/1.5em Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color: #77b53c;
+}
+.textfield_bg {
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_bg.png') center top repeat-x;
+	display: block;
+	height: 35px;
+	overflow: hidden;
+	float: left;
+}
+.textfield_left {
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_left.png') left top no-repeat;
+	display: block;
+	height: 35px;
+	overflow: hidden;
+}
+.textfield_right {
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_right.png') right top no-repeat;
+	display: block;
+	height: 35px;
+	overflow: hidden;
+}
+.formRadio.narrow.checkingSavings .textfield_bg,
+.formRadio.narrow.checkingSavings .textfield_left,
+.formRadio.narrow.checkingSavings .textfield_right,
+.textfield_bg.IEFix,
+.textfield_bg.IEFix .textfield_left,
+.textfield_bg.IEFix .textfield_right {
+  background: none;
+}
+.textfield_bg.IEFix select {
+  font-size:1em;
+  border:1px solid #ccc;
+  padding-right: 0;
+  margin: 0 0.25em;
+  background:#fff;
+}
+.textfield_creditCard {
+	width: auto;
+	height:35px;
+	display:block;
+	overflow: hidden;
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_creditCard.png') no-repeat 0 0;
+	padding-left:0;
+}
+.innerShell .textfield_dob{
+	width: 181px;
+	height:35px;
+	display:block;
+	overflow: hidden;
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_dob.png') no-repeat 0 0;
+	padding-left:4px;
+	float:left;
+}
+.innerShell .textField.day,
+.innerShell .textField.month {
+	width:43px;
+	float:left;
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+	margin-right: 20px;
+}
+.innerShell .textField.year {
+	width:45px;
+	float:left;
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+}
+.innerShell .textfield_ssn{
+	width: 62px;
+	height:35px;
+	display:block;
+	overflow: hidden;
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_ssn.png') no-repeat 0 0;
+	padding-left:4px;
+	float:left;
+}
+.innerShell .textfield_policy{
+	width: 131px;
+	height:35px;
+	display:block;
+	overflow: hidden;
+	background:url('/AmfamCommon/site-assets/apps/images/textfield_policy.png') no-repeat 0 0;
+	padding-left:4px;
+	float:left;
+}
+.innerShell .textField.policy1 {
+	width:36px;
+	float:left;
+	padding-left:5px;
+	padding-right:0;
+	text-align:center;
+	margin-right:0px;
+}
+.innerShell .textField.policy2 {
+	width:40px;
+	float:left;
+	padding-left:11px;
+	padding-right:0;
+	text-align:center;
+	margin-right: 12px;
+}
+.innerShell .textField.policy3 {
+	width:20px;
+	float:left;
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+}
+.error .textfield_bg {
+	background:url('/AmfamCommon/site-assets/apps/images/error_textfield_bg.png') center top repeat-x;
+}
+.error .textfield_bg.IEFix {
+	background:none;
+}
+.error .textfield_left {
+	background:url('/AmfamCommon/site-assets/apps/images/error_textfield_left.png') left top no-repeat;
+}
+.error .textfield_right {
+	background:url('/AmfamCommon/site-assets/apps/images/error_textfield_right.png') right top no-repeat;
+}
+.error .textfield_creditCard {
+	background:url('/AmfamCommon/site-assets/apps/images/error_textfield_creditCard.png') no-repeat 0 0;
+}
+.innerShell .error .textfield_dob{
+	background:url('/AmfamCommon/site-assets/apps/images/error_textfield_dob.png') no-repeat 0 0;
+}
+select {
+	background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  color: #666;
+  float: left;
+  font-size: 12px;
+  height: 20px;
+	  height: auto\9;
+  line-height: 1.5em;
+  margin-top: 9px;
+	  *margin-top: 5px; /*  IE 7 and less */
+  padding: 0 10px;
+  width: 183px;
+}
+@-moz-document url-prefix() {
+   #billing .row .labelSet .two .ui-select{
+        width:183px;
+    }
+    #billing .row .labelSet .two .IEFix .ui-select{
+        width:auto;
+    }
+    select#paymentAmountType{
+        width: 118%;
+   }
+    
+}
+#bankAccountType{
+	padding-right:0px;
+	border:1px solid #ccc;
+}
+.checkingSavings .ui-select{
+  width: 150px;
+}
+select.month {
+	width:60px;
+	text-align: center;
+	height: 18px;
+	  *background: none repeat scroll 0 0 #FFFFFF; /*  IE 7 and less */
+    *border: 1px solid #CCCCCC; /*  IE 7 and less */
+    *height: 26px; /*  IE 7 and less */
+    *margin-right: 5px;
+    *margin-left: 5px;
+    *font-size: 18px;
+    *padding-bottom: 5px;
+}
+select.month option {
+	  *height: 26px;
+    *display: block;
+}
+select.year {
+	width:80px;
+	height: 18px;
+	text-align: center;
+	  *background: none repeat scroll 0 0 #FFF; /*  IE 7 and less */
+    *border: 1px solid #CCC; /*  IE 7 and less */
+    *height: 26px; /*  IE 7 and less */
+    *margin-right: 5px;
+    *font-size: 18px;
+    *padding-bottom: 5px;
+}
+select.year option {
+	  *font-size: 12px !important;
+    *margin: 5px 0;
+    *height: 26px;
+}
+.textField {
+	border: none;
+	background: none;
+	float: left;
+	padding: 10px;
+	  padding-top: 8px\9;  /* <=8 IE hack */
+    padding-left: 10px\9;  /* <=8 IE hack */
+    padding-right: 10px\9;  /* <=8 IE hack */
+	font-size:1em;
+	line-height: 1.5em;
+	height: 15px;
+	color: #ccc;
+	width: 165px;
+}
+.textField.credit {
+	text-align: center;
+  width: 40px;
+}
+.startForm .textfield {
+	width: 175px;
+	  width: 155px\9;  /* <=8 IE hack */
+	margin: 0 auto;
+}
+.innerShell .textField {
+	width: 115px;
+}
+p.helpText {
+	margin: 7px 0 0;
+	display: block;
+	width: 180px;
+	float: left;
+	line-height: 1em;
+}
+p.helpText a {
+	font-weight: normal;
+	font-size: 1.1em;
+}
+.labelSet li p.helpText a {
+	font-size: 0.9em;
+}
+.buttonRow {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 20px;
+    text-align: left;
+}
+.formRadio {
+  clear: both;
+  display: block;
+  height: 24px;
+  line-height: 2.2em;
+  overflow: hidden;
+  width: 325px;
+	margin-bottom: 4px;
+	text-justify: none;
+}
+.radioSkin {
+  display: block;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  width: 24px;
+	padding-left: 4px;
+}
+.radioLabel {
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+	font: 0.8em/1.1em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #666;
+	padding: 0;
+	font-weight: normal;
+	overflow: visible;
+	  padding-top: 2px\9;
+}
+.radioTextfield {
+	display: block;
+	float: left;
+	height: auto;
+	width: auto;
+	font: 0.8em/0.9em Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #666;
+	padding: 0;
+	font-weight: normal;
+	margin-top: -10px;
+}
+.floatLeft {
+  float: left;
+  padding-top: 3px;
+}
+.txtLeft {
+  background: url('/AmfamCommon/site-assets/apps/images/icons.gif') no-repeat scroll 0 -289px transparent;
+  display: block;
+  float: left;
+  height: 32px;
+  overflow: hidden;
+  width: 9px;
+}
+#PCIContent input {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  float: left;
+  height: 32px;
+  padding: 0;
+}
+.txtRight {
+  background: url('/AmfamCommon/site-assets/apps/images/icons.gif') no-repeat scroll -9px -289px transparent;
+  display: block;
+  float: left;
+  height: 32px;
+  overflow: hidden;
+  width: 9px;
+}
+.txtCenter {
+  background: url('/AmfamCommon/site-assets/apps/images/textField_background.png') repeat-x scroll 0 0 transparent;
+  display: block;
+  float: left;
+  height: 32px;
+  overflow: hidden;
+  width: auto;
+}
+
+/* ---- buttons ---- */
+.btn_remove {
+	background:url('/AmfamCommon/site-assets/apps/images/btn_remove.png') no-repeat;
+	width: 51px;
+	height:17px;
+	display: inline-block;
+	text-indent: 2000em;
+	overflow:hidden;
+}
+#btn_cancel, #cancelAddBill {
+	background: url('/AmfamCommon/site-assets/apps/images/btn_cancel.png') no-repeat 0 0;
+	width: 55px;
+	height:23px;
+	display: inline-block;
+	text-indent:-2000em;
+	overflow:hidden;
+	margin: 0 7px;
+	float:left;
+}
+#btn_next {
+	display: inline-block;
+	text-indent:-2000em;
+	overflow:hidden;
+	margin: 0 7px;
+}
+#btn_addBillingAccount {
+	background: url('/AmfamCommon/site-assets/apps/images/btn_addBillingAccount.png') no-repeat 0 0;
+	width: 139px;
+	height: 23px;
+	display: inline-block;
+	text-indent: -2000em;
+	text-align: left;
+	overflow: hidden;
+	margin: 0;
+	float: left;
+}
+input.paynowaction {
+  display: inline-block;
+  float: left;
+}
+
+#btn_previous {
+	background: url('/AmfamCommon/site-assets/apps/images/btn_previous.png') no-repeat 0 0;
+	width: 85px;
+	height: 23px;
+	display: inline-block;
+	text-indent: -2000em;
+	text-align: left;
+	overflow: hidden;
+	margin: 0 7px;
+}
+#btn_print {
+	background: url('/AmfamCommon/site-assets/apps/images/btn_print.png') no-repeat 0 0;
+	width: 84px;
+	height: 23px;
+	display: inline-block;
+	text-indent: -2000em;
+	text-align: left;
+	overflow: hidden;
+	margin: 0 7px;
+}
+#btn_closeWindow{
+	background: url('/AmfamCommon/site-assets/apps/images/btn_closeWindow.png') no-repeat 0 0;
+	width: 107px;
+	height: 23px;
+	display: inline-block;
+	text-indent: -2000em;
+	text-align: left;
+	overflow: hidden;
+	margin: 0 7px;
+}
+.darkText {
+  color: #666 !important;
+}
+.lightText {
+  color: #ccc !important;
+}
+.hide {
+  display: none !important;
+}
+.labelSet li.formRadio.mcVisa {
+  overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#billing #page_title.paynow,
+
+#billing p.helpText.rightText a.help.ui-link,
+#billing .row .labelSet .one .help.ui-link,
+#billing .row .labelSet p a.email_help_text.ui-link {
+  display: none;
+}
+#billing #outterShell,
+#billing #outterShellBottom,
+#billing #outterShellTop,
+#billing #help_content2 .table_full,
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel,
+#billing .row .labelSet,
+#billing #outterShell,
+#billing #outterShellBottom,
+#billing #outterShellTop {
+  width: 100%;
+}
+#billing #outterShellBottom,
+#billing #outterShellTop,
+#billing #wrapper #payNowForm p.payment_desc,
+#billing #wrapper #payNowForm label,
+#billing #outterShellBottom,
+#billing #outterShellTop,
+#billing #payNowForm .row,
+#billing #accountInfoDesktop .fourColumns li .button.ui-link,
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio,
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel .otheramountclass,
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel .otheramountclass .ui-input-text input[type='text'],
+#billing .fourColumns.header li h3,
+#billing .row .labelSet .two .ui-select,
+#billing .row .labelSet .ui-select #bankAccountType,
+#billing .row .labelSet p,
+#billing #payNowForm .row {
+  margin: 0;
+}
+#billing #outterShellBottom,
+#billing #outterShellTop {
+  overflow: auto;
+}
+#billing #outterShellBottom,
+#billing #outterShellTop,
+#billing #payNowForm .row,
+#billing .fourColumns.header,
+#billing .fourColumns.header li,
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio,
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel .otheramountclass .ui-input-text,
+#billing .threeColumns.footer,
+#billing .threeColumns.footer .three,
+#billing .threeColumns.footer .one + .one,
+#billing .row .labelSet .one,
+#billing .row .labelSet .two {
+  padding: 0;
+}
+#billing #outterShellTop {
+  min-height: inherit;
+  overflow: hidden;
+}
+#billing #wrapper #payNowForm #collapsible-panels p {
+  margin: 1.5rem 0;
+}
+#billing #payNowForm .row:nth-child(odd),
+#billing #payNowForm .row:nth-child(odd) {
+  padding-top: 15px;
+}
+#billing #wrapper #payNowForm p a {
+  text-decoration: underline;
+  font-weight: normal;
+}
+#billing #payNowForm .row #entryfieldlabel {
+  margin-bottom: 0;
+}
+#billing #wrapper #payNowForm label {
+  float: none;
+  width: auto;
+  text-align: left;
+}
+#billing #payNowForm h3 {
+  font-size: 1rem;
+}
+#billing .table_full ul {
+  list-style-position: inside !important;
+}
+#billing * {
+  box-sizing: border-box;
+}
+#billing #accountInfoDesktop .fourColumns {
+  padding: 0;
+}
+#billing .fourColumns.header {
+  margin-top: 15px;
+}
+#billing #accountInfoDesktop .fourColumns li,
+#billing #accountInfoDesktop .fourColumns li.one,
+#billing #accountInfoDesktop .fourColumns li.two,
+#billing #accountInfoDesktop .fourColumns li.three,
+#billing #accountInfoDesktop .fourColumns li.four {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+#billing #accountInfoDesktop .fourColumns {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+#billing #accountInfoDesktop .fourColumns li.four {
+  width: 245px;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio {
+  width: 245px;
+  margin-bottom: 0;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin {
+  padding-left: 0;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel::after {
+  left: 0;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 0;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel.ui-radio-on::after {
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ddd;
+  background-color: #007bb2;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioButton {
+  margin: 5px 0 0 2px;
+  left: 0;
+  top: -1px;
+  width: 20px;
+  height: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel .floatLeft {
+  padding-top: 0;
+}
+#billing #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel .otheramountclass .ui-input-text input[type='text'] {
+  left: 4em;
+}
+#billing .fourColumns li.three {
+  width: 15em;
+}
+#billing .fourColumns.header li h3 {
+  padding-top: 0;
+  height: 13px;
+}
+#billing .fourColumns.header li #enterpage,
+#billing .fourColumns.header li #enterpagepayemnt {
+  float: left !important;
+  clear: both !important;
+}
+#billing .fourColumns.header li #enterpage a,
+#billing .fourColumns.header li #enterpagepayemnt a {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  cursor: pointer;
+}
+#billing .threeColumns.footer .three .button {
+  box-sizing: border-box;
+  margin: 0 0 15px;
+}
+#billing .threeColumns.footer .one {
+  padding: 15px 0 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  
+}
+#billing #grandtotal {
+  font-weight: bold;
+}
+#billing .row .labelSet .one,
+#billing .row .labelSet .two {
+  font-weight: normal;
+}
+#billing #payNowForm .one label {
+  font-weight: normal;
+}
+#billing .row .labelSet .one.payment-type {
+  padding-top: 15px;
+}
+#billing .row .labelSet .two .ui-select #paymentamounttype {
+  box-shadow: none;
+  margin-top: 5px;
+}
+#billing .row .labelSet .ui-select #bankAccountType {
+  box-shadow: none;
+}
+#billing .bank-details .row .labelSet .two {
+  width: auto;
+  margin-right: 0;
+}
+#billing .row .labelSet input[type='text'] {
+  width: 183px;
+  max-width: 183px;
+}
+#billing .row .labelSet p a {
+  font-weight: normal;
+  padding: .4em;
+  display: block;
+  float: left;
+  line-height: 1.4em;
+  font-size: 12px;
+}
+#billing .bank-details .row + .row .labelSet {
+  margin-bottom: 0;
+}
+#billing label#email[for='email'] {
+  margin-top: 20px;
+}
+#billing #checkingSavings + .row li.two {
+  width: 183px;
+}
+#billing #payNowForm .row.buttonRow {
+  margin-top: 15px;
+  }
+#billing #payNowForm input[type=submit] {
+  cursor: pointer;
+}
+#billing #payNowForm .creditCard select.month,
+#billing #payNowForm .creditCard select.year {
+  box-shadow: none;
+}
+#billing #accountInfo li .help_question.ui-link {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-decoration: underline;
+  text-indent: 0;
+  width: 100% !important;
+  height: auto;
+  overflow: auto;
+  padding-bottom: .25rem;
+}
+#billing #account
+
+/* -------------------------------------------------------------------------- */
+/* restyle the containers that are wrapping the all of the main content */
+#billing #outterShellBottom {
+  border-radius: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* add some space between the header's bottom shadow and the progress bar */
+#billing #header {
+  margin-bottom: 25px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* remove garbage spacing from around the "Payment Details" summary */
+#billing .innerShell.PayVerifyDiv {
+  margin: 15px 0;
+  width: 100%;
+}
+#billing .innerShell.PayVerifyDiv .innerShellBottom {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#billing .innerShell.PayVerifyDiv .innerShellTop {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* add spacing to the "Payment Details" summary rows 1 & 2 */
+#billing #payNowForm .innerShell.PayVerifyDiv .row {
+  padding-top: 15px;
+}
+/*#billing #payNowForm .innerShell.PayVerifyDiv .row:nth-child(2),
+#billing #payNowForm .innerShell.PayVerifyDiv .row:nth-child(3) {
+  padding-top: 15px;
+}
+*/
+/* -------------------------------------------------------------------------- */
+/* get rid of the print icon in the print button */
+#billing .printBtn::before {
+  content: none;
+  background: none;
+  padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* make the "Payment Details" print and email buttons play nice with layout */
+#billing #payNowForm .notprintable a.button.printBtn {
+  float: left;
+}
+#billing #payNowForm .emailreceiptbutton {
+  margin: 0 0 0 1rem;
+  float: left;
+}
+#billing #payNowForm .emailreceiptbutton a {
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/* adjust the help phone #'s position in the header for Pay Now */
+#billing #help {
+  top: 18px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* make the email button's help box behave */
+#billing #confirmemailreceipt {
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+}
+#billing #confirmemailreceipt input {
+  background-color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/* font fixing */
+#billing #payNowForm p,
+#billing #payNowForm p a,
+#billing #payNowForm input[type='text'],
+#billing #payNowForm input[type='text']:focus,
+#billing #payNowForm #entryfieldlabel,
+#billing #payNowForm #help_content2 b,
+#billing #payNowForm #help_content2 li,
+#billing #payNowForm .ziphelp,
+#billing #payNowForm .help_content ul {
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+@media only screen and (max-width: 767px) {
+  #billing #payNowForm p,
+  #billing #payNowForm p a {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* make the help links to the right of inputs vertical align properly */
+#billing #payNowForm .helpText .help_question {
+  margin-top: 4px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* progress bar */
+#billing #payNowForm #progressBar {
+  box-shadow: 0 2px 0 #e6e6e6;
+}
+#billing #payNowForm #progressBar.four {
+  width: 100%;
+  overflow: auto;
+  padding: 0;
+  height: auto;
+  margin-bottom: 0;
+}
+#billing #payNowForm #progressBar #endCap_left_present {
+  display: none;
+}
+#billing #payNowForm #progressBar .progressBar_present span,
+#billing #payNowForm #progressBar .progressBar_future span {
+  width: 100%;
+}
+#billing #payNowForm #progressBar .progressBar_future span,
+#billing #payNowForm #progressBar .progressBar_past span,
+#billing #payNowForm #progressBar .progressBar_present span,
+#billing #payNowForm #progressBar .endCap_left_present span {
+  overflow: auto;
+}
+#billing #payNowForm #progressBar.four .progressBar_present1,
+#billing #payNowForm #progressBar .progressBar_future span,
+#billing #payNowForm #progressBar .progressBar_past span,
+#billing #payNowForm #progressBar .progressBar_present span {
+  padding: 0;
+}
+#billing #payNowForm #progressBar .progressBar_past,
+#billing #payNowForm #progressBar.four .progressBar_present1,
+#billing #payNowForm #progressBar.four .endCap_left_present {
+  margin-left: 0;
+  padding-right: 0;
+  height: auto;
+  width: 25%;
+}
+#billing #payNowForm #progressBar.four .progressBar_present1 .oneLine {
+  text-align: left;
+  height: auto;
+}
+#billing #payNowForm #progressBar .progressBar_past .oneLine,
+#billing #payNowForm #progressBar .progressBar_present1 .oneLine,
+#billing #payNowForm #progressBar .progressBar_present .oneLine,
+#billing #payNowForm #progressBar .progressBar_future .oneLine,
+#billing #payNowForm #progressBar .endCap_left_present .oneLine {
+  display: block;
+  float: none;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: .25rem;
+  text-align: center;
+  width: auto;
+}
+#billing #wrapper #payNowForm #progressBar .progressBar_future,
+#billing #wrapper #payNowForm #progressBar .progressBar_past,
+#billing #wrapper #payNowForm #progressBar .progressBar_present {
+  height: auto;
+  width: 25%;
+}
+#billing #payNowForm #progressBar .progressBar_future span,
+#billing #payNowForm #progressBar .progressBar_past span,
+#billing #payNowForm #progressBar .progressBar_present span {
+  height: auto;
+  padding-top: 0;
+  text-align: center;
+}
+#billing #payNowForm #progressBar .endCap_left_present {
+  color: #007bb2;
+}
+
+/* -------------------------------------------------------------------------- */
+/* mobile logo & header */
+@media only screen and (max-width: 767px) {
+  #billing #header #logo {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 60px;
+    z-index: 9999;
+    float: none;
+    visibility: visible;
+    background-color: #fff;
+    background-image: none;
+    top: -15px;
+  }
+  #billing #header #logo img {
+    display: block;
+    height: 30px;
+    width: 100px;
+    z-index: 9999;
+    margin-left: 50px;
+    margin-top: 18px;
+  }
+  #billing #header {
+    margin-bottom: 0;
+  }
+   #billing #pageTitle + #outterShellBottom {
+    padding-top: 0;
+  }
+  #billing #payNowForm #progressBar {
+    border: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Buttons */
+#billing .paynowNextbtn::before,
+#billing .paynowPreviousBtn::before {
+  content: none;
+  margin-left: 0;
+}
+#billing #payNowForm .button.cancelBtn,
+#billing #payNowForm .button.paynowPreviousBtn,
+#billing #payNowForm input[type='submit'] {
+  padding: .5rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+#billing #payNowForm .button.cancelBtn span {
+  font-size: 0.8rem;
+}
+#billing #payNowForm .button.addbackBtn {
+display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* fix help text dialogs */
+#billing #collapsible-panels #help_content2,
+#billing .togglehelp .help_content {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  display: none;
+  background-color: #E7E8E9;
+}
+#billing .togglehelp .help_content {
+  margin-top: 15px !important;
+}
+#billing .togglehelp .help_content .content_float {
+  width: auto;
+  margin: 1em 2em !important;
+}
+#billing #payNowForm .help_content .content_float h4 {
+  font-size: 1rem;
+  color: #454545;
+}
+#billing #payNowForm .help_content .content_float p {
+  font-size: .8rem;
+}
+#billing #payNowForm .help_content .content_float #help_text_images {
+  margin: 0 !important;
+}
+#billing #payNowForm .help_content .content_float #help_text_images img {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media only screen and (min-width: 768px) {
+  #billing #payNowForm .help_content .content_float #help_text_images img {
+    width: 49% !important;
+    margin: 0 !important
+  }
+  #billing #payNowForm .help_content .content_float #help_text_images img:nth-child(even) {
+    margin-left: 2% !important;
+    padding-left: 0 !important;
+  }
+}
+#billing #payNowForm .help_content ul {
+  list-style-position: inside !important;
+  font-size: 0.8rem;
+}
+#billing #payNowForm .help_content ul .ziphelp {
+  margin-left: 0;
+}
+#billing #help_content2 h3 {
+  line-height: 1.2em;
+  margin-bottom: 15px;
+}
+
+#billing #help_content2 h4 {
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  font-size:1rem;
+  color:#77b53c;
+}
+
+#billing #help_content2 table {
+  margin: 1em 2em !important;
+  width: 90%;
+}
+#billing #help_content2 .table_full {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+td.table_full {
+ float: left;
+}	
+@media only screen and (min-width: 768px) {
+  #billing #help_content2 .table_full {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+#billing #payNowForm .help_content .content_float p {
+  margin-left: 0;
+  margin-right: 0;
+}
+#billing #payNowForm .help_content5 , .content_float{
+  margin: 0 0 -1px 0;
+  padding: 1rem 2rem;
+}
+#billing #payNowForm .help_content5 p ,.content_float{
+  margin: 0 0 15px 0;
+  color: #454545;
+}
+/* headlines */
+#billing #payNowForm .help_content5 h4,
+#billing #payNowForm .help_content3 .content_float > b,
+#billing #payNowForm #help_contentrountingnumber .content_float > b,
+#billing #payNowForm #help_contentaccountnumber .content_float > b {
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  /*color: #454545;*/
+  color: #77b53c;
+}
+#billing #payNowForm #confirmemailreceipt > b {
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #454545;
+}
+#billing #payNowForm #help_contentrountingnumber .content_float,
+#billing #payNowForm #help_contentaccountnumber .content_float,
+#billing #payNowForm #confirmemailreceipt,
+#billing #payNowForm .notprintable {
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Setup(TKTKTK).html specific */
+#billing.start p.payment_desc {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #billing #pageTitle {
+    margin-bottom: 0;
+    margin-top: 0;
+    height: auto !important;
+  }
+  #billing #pageTitle div {
+    margin: 1.8325rem 0 0.7rem;
+  }
+  #billing div.ui-content[role='main'] {
+    margin-top: 0rem;
+  }
+  #billing #outterShellBottom {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem 0;
+  }
+  #billing #payNowForm .help_content .content_float p,
+  #billing #payNowForm .help_content .content_float ul {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+ #billing #wrapper #payNowForm #collapsible-panels p {
+    margin-top: 1rem !important;
+    width: 90% !important;
+    margin: 1rem 5% !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Entry(TKTKTK).html specific */
+#billing.enterPayment #accountInfo li h3 {
+  font-size: 0.8rem;
+}
+#billing.enterPayment #accountInfo li .help {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-decoration: underline;
+  text-indent: 0;
+  width: 100% !important;
+  height: auto;
+  overflow: auto;
+  padding-bottom: .25rem;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns li {
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+#billing.enterPayment .fourColumns li.one {   width: 100px; }
+#billing.enterPayment .fourColumns li.two {   width: 150px; }
+#billing.enterPayment .fourColumns li.three { width: 150px; }
+#billing.enterPayment .fourColumns li.four  { width: 275px; }
+#billing.enterPayment .fourColumns li:nth-child(5) { width: 105px; text-align: right; }
+#billing.enterPayment .threeColumns.footer .three {
+  width: 100%;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin .ui-radio .radioLabel {
+  margin-right: 0;
+  display: block;
+  box-sizing: border-box;
+  padding: .3rem 0 .5rem 1.75rem;
+  font-size:0.8rem;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio + li.formRadio + li.formRadio .radioSkin .ui-radio label.radioLabel {
+  padding-bottom: 1.5rem;
+}
+#billing.enterPayment .fourColumns li.four label .otheramountclass {
+  display: none;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio + li.formRadio + li.formRadio .radioSkin .ui-radio label.radioLabel.checked { padding-bottom: .5rem; }
+#billing.enterPayment .fourColumns li.four label.checked .otheramountclass {
+  display: block;
+}
+#billing.enterPayment .otheramountclass .floatLeft {
+  display: block;
+  float: left;
+  clear: left;
+  width: auto;
+  margin: 12px 5px 0 0;
+}
+#billing.enterPayment .otheramountclass .ui-input-text {
+  margin-left: 0;
+  margin-top: 5px;
+  display: block;
+  float: left;
+}
+#billing.enterPayment .otheramountclass .ui-input-text input {
+  position: static;
+  float: left;
+  clear: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#billing.enterPayment #accountInfo .threeColumns.footer .one b,
+#billing.enterPayment #accountInfo .threeColumns.footer #grandtotal,
+#billing.enterPayment #accountInfo .labelSet .one,
+#billing.enterPayment #accountInfo .labelSet .two {
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+#billing.enterPayment #accountInfo .labelSet .one,
+#billing.enterPayment #accountInfo .labelSet .two {
+  width: 100%;
+}
+#billing.enterPayment #accountInfo .labelSet .row {
+  margin-top: 15px;
+}
+#billing.enterPayment #accountInfo .labelSet .helpText .ui-link + .ui-link,
+#billing.enterPayment .routingnumberhelpText .ui-link,
+#billing.enterPayment .accountnumberhelpText .ui-link {
+  padding: .1rem 0 0;
+}
+#billing.enterPayment #checkingSavings .row.checkingSavings,
+#billing.enterPayment #creditCard .row.creditCard {
+  padding: 0;
+  margin: 0;
+}
+#billing.enterPayment #checkingSavings .row.checkingSavings .labelSet,
+#billing.enterPayment #creditCard .row.creditCard .labelSet {
+  margin: 15px 0 0 0;
+}
+#billing.enterPayment #checkingSavings .row.checkingSavings .labelSet .one {
+  white-space: nowrap;
+}
+#billing.enterPayment #accountInfo .labelSet .row.checkingSavings.textOnly {
+  margin-top: 0;
+}
+#billing.enterPayment #accountInfo .labelSet .row.checkingSavings.textOnly .disclaimer {
+  margin-top: 15px;
+}
+#billing.enterPayment .textField.credit {
+  text-align: left;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns li.four ul#radiobuttons li.formRadio .radioSkin {
+  min-height: 24px;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns {
+  margin-bottom: 7px;
+  padding-top: 7px;
+  border-top: 1px solid #e6e6e6;
+}
+#billing.enterPayment #accountInfoDesktop .fourColumns:nth-child(1) {
+  border-top: 0;
+}
+#billing.enterPayment .threeColumns.footer {
+  padding-top: 15px;
+}
+#billing.enterPayment .innerShell.payNowShell {
+  background: #e7e8e9;
+  border: 0;
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+#billing.enterPayment .payNowShell .innerShellBottom {
+  margin: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+#billing.enterPayment .payNowShell .innerShellTop {
+  width: 100%;
+  padding: 0;
+  background: none;
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+#billing.enterPayment .help_content4,
+#billing.enterPayment .help_content5 ,.content_float{
+  padding: 2rem 1rem;
+}
+#billing.enterPayment .payNowShell .innerShellTop > b,
+#billing.enterPayment .help_content4 h4,
+#billing.enterPayment .help_content5 h4 ,.content_float h4{
+  line-height: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #454545;
+}
+#billing.enterPayment .payNowShell label,
+#billing.enterPayment .help_content4 p,
+#billing.enterPayment .help_content5 p,
+#billing.enterPayment .help_content5 , .content_float p{
+  font-size: 0.8rem;
+  line-height: 150%;
+  color: #454545;
+}
+#billing.enterPayment .help_content4 p,
+#billing.enterPayment .help_content5 p ,.content_float p
+ {
+  margin: 0.5rem 0;
+}
+#billing.enterPayment .payNowShell .ui-input-text {
+  float: left;
+}
+#billing.enterPayment .payNowShell .ui-input-text input {
+  background: #fff;
+  width: 100%;
+}
+#billing.enterPayment #accountInfo .payNowShell .help.ui-link {
+  margin-left: 5px;
+  margin-top: 7px;
+  display: block;
+  float: left;
+  width: 17.1em !important;
+}
+#billing.enterPayment #payNowForm .payNowShell .button.cancelBtn {
+  float: left;
+  margin-right: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  #billing #payNowForm #progressBar.four {
+    box-shadow: none;
+    margin-top: 0;
+    border-radius: 0;
+    height: auto !important;
+  }
+  #billing #payNowForm #progressBar li {
+    width: 33% !important;
+    margin: 0;
+    padding: 0;
+  }
+  #billing #payNowForm #progressBar li span {
+    background: url('https://apps.amfam.com/AmfamCommon/site-assets/apps/img/button2_state3.png') 36px 0 no-repeat;
+    padding-top: 68px !important;
+  }
+  #billing #payNowForm #progressBar li.progressBar_present {
+  }
+  #billing #payNowForm .PayVerifyDiv .innerShellBottom {
+    box-shadow: none;
+  }
+  #billing #payNowForm .PayVerifyDiv .innerShellTop {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  #billing.confirmation #receiptscreen p {
+    margin: 0 0 15px 0 !important;
+    width: 100% !important;
+  }
+  #billing.confirmation #receiptscreen {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #billing.verification #payNowForm .row.buttonRow {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #billing.verification .PayVerifyDiv .two {
+    padding-left: 0 !important;
+    padding-bottom: 15px;
+  }
+  #billing.verification .PayVerifyDiv .row {
+    padding-top: 0 !important;
+  }
+  #billing.enterPayment #accountInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    height: auto;
+  }
+  #billing.enterPayment #accountInfo #accountInfoMobile {
+    order: -1;
+  }
+  #billing.enterPayment #accountInfo .row {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  #billing.enterPayment .fourColumns li.one,
+  #billing.enterPayment .fourColumns li.two {
+    font-size: 1rem;
+    line-height: 150%;
+    color: #454545;
+    width: 100%;
+    text-align: left;
+  }
+  #billing.enterPayment .fourColumns li.two {
+    padding: 0 0 1rem 0;
+  }
+  #billing.enterPayment .ui-btn.ui-checkbox-off:after,
+  #billing.enterPayment .ui-btn.ui-checkbox-on:after,
+  #billing.enterPayment .ui-btn.ui-radio-off:after,
+  #billing.enterPayment .ui-btn.ui-radio-on:after {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+  #billing.enterPayment .ui-radio .ui-btn.ui-radio-on:after {
+    height: 20px;
+    width: 20px;
+    border-width: 5px;
+  }
+  #billing.enterPayment .ui-radio input {
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+    z-index: -1;
+  }
+  #billing.enterPayment .radioSkin {
+    padding-left: 0;
+  }
+  #billing.enterPayment .radioLabel {
+    padding-left: 39px;
+    font-size: 1rem;
+    padding-top: 5px;
+      width: auto !important;
+  }
+  #billing.enterPayment label[for='mobile_other_0'] > .floatLeft {
+    padding-top: 0;
+  }
+  #billing.enterPayment .ui-radio input {
+    top: 0;
+  }
+  #billing.enterPayment .ui-radio {
+    margin: 0;
+  }
+  #billing.enterPayment .otheramountclass {
+    margin: 0;
+  }
+  #billing.enterPayment #payNowForm #accountInfoMobile .ui-radio label {
+    width: 100% !important;
+
+  }
+  #billing.enterPayment #payNowForm #accountInfoMobile .ui-radio label .floatLeft {
+    padding-bottom: 12px;
+  }
+  #billing.enterPayment #payNowForm #accountInfoMobile .ui-radio label .otheramountclass {
+    display: none;
+  }
+  #billing.enterPayment #payNowForm #accountInfoMobile .ui-radio label.checked .otheramountclass {
+    display: block;
+  }
+  #billing.enterPayment .otheramountclass .floatLeft {
+    margin-top: 16px;
+    padding-top: 0;
+  }
+  #billing.enterPayment .otheramountclass .ui-input-text {
+    width: 180px;
+    box-shadow: none;
+    height: 47px;
+    padding: 0px;
+    text-align: left;
+  }
+  #billing.enterPayment #payNowForm #accountInfoMobile .ui-radio input[type=text] {
+    width: 100%;
+    padding: 10px;
+    height: 44px;
+    font-size: 1rem;
+    margin: 0;
+  }
+  #billing.enterPayment #accountInfo .threeColumns.footer .one b,
+  #billing.enterPayment #accountInfo .threeColumns.footer .one #grandtotal {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  #billing.enterPayment #accountInfo .row .labelSet .two,
+  #billing.enterPayment #accountInfo .row .labelSet .one {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  #billing.enterPayment .threeColumns.footer {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  #billing.enterPayment .threeColumns.footer .one {
+    padding-top: 0;
+  }
+  #billing.verification #receiptscreen {
+    margin-top: 2rem;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Confirm(TKTKTK).html specific */
+#billing.confirmation #receiptscreen {
+  padding: .5rem 0 1.5rem;
+}
+#billing.confirmation #receiptscreen p {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+#billing.confirmation .PayVerifyDiv h2 {
+  color: #77b53c;
+}
+#billing.confirmation .PayVerifyDiv .one,
+#billing.confirmation .PayVerifyDiv .two {
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-weight: normal;
+}
+#billing.confirmation .PayVerifyDiv .two {
+  padding-left: .25rem;
+}
+#billing.confirmation .notprintable[align='center'] {
+  text-align: left !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Verify(TKTKTK).html specific */
+#billing.verification #progressBar + p {
+  padding: 1.5rem 0 .75rem;
+  margin: 0;
+}
+#billing.verification #progressBar + p + p {
+  padding: 0 0 1.5rem;
+  margin: 0;
+}
+#billing.verification #receiptscreen p {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+#billing.verification .innerShell.PayVerifyDiv {
+  border-top: 2px solid #e6e6e6;
+  margin-top: 0;
+  padding-top: 1.5rem;
+}
+#billing.verification .innerShell.PayVerifyDiv .innerShellBottom {
+  border-radius: 0;
+  box-shadow: none;
+}
+#billing.verification .innerShell.PayVerifyDiv h2 {
+  border-radius: 0;
+}
+#billing.verification .PayVerifyDiv h2 {
+  color: #77b53c;
+}
+#billing.verification .PayVerifyDiv .one,
+#billing.verification .PayVerifyDiv .two {
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-weight: normal;
+}
+#billing.verification .PayVerifyDiv .two {
+  padding-left: .25rem;
+}
+#billing.verification .notprintable[align='center'] {
+  text-align: left !important;
+}
+#billing.verification #payNowForm .row.buttonRow {
+  margin-top: 0;
+  padding-top: 0;
+}
+#billing.verification #reviewcustomhelp {
+  display: none;
+}
+
+/*Optimized.css changes*/
+#payNowForm #progressBar .progressBar_future {
+    color: #aeaeae;
+    width: auto;
+    background: none;
+}
+#help_content2,.help_content3,.help_content4,.help_content5,#help_contentrountingnumber,#help_contentaccountnumber{
+	display: none
+}
+.help_content3,.help_content4,.help_content5,#help_contentrountingnumber,#help_contentaccountnumber , .content_float{
+
+	background-color: #E7E8E9;
+	float: left;
+	margin-top: 1.5em;
+	padding-left: 1em;
+}
+.innerShell.payNowShell {
+    width: 100%;
+    background-color: #E7E8E9;
+    /* border: 1px solid #c9c9c9; */
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+#billing #collapsible-panels #help_content2, #billing .togglehelp .help_content {
+	margin-left:0 !important;
+	margin-top:0 !important;
+	width:100% !important;
+}
+
+#billing #wrapper #payNowForm #collapsible-panels p {
+	margin-top:1rem !important;
+	width:90% !important;
+}
+
+#billing #payNowForm #progressBar {
+	box-shadow:0 2px 0 #e6e6e6;
+	border:0;
+}
+
+#billing #pageTitle + #outterShellBottom {
+	padding-top:0;
+}
+
+#billing #payNowForm .help_content .content_float h4 {
+	font-size:1rem;
+	color:#77b53c;
+}
+
+@media screen and (max-width: 767px) { 
+#billing #pageTitle {
+	margin-bottom:0;
+	margin-top:0;
+	height:auto !important;
+}
+}
+
+#billing #pageTitle div {
+	margin:1.8325rem 0 0.7rem;
+}
+
+#billing.enterPayment .threeColumns.footer {
+	padding-top:0;
+	padding-bottom:1rem;
+}
+
+#billing.enterPayment .innerShell.payNowShell {
+	background:#e7e8e9;
+	border:0;
+	height:auto;
+	margin:0;
+	width:100%;
+}
+
+#billing.enterPayment .payNowShell .innerShellBottom {
+	margin:0;
+	padding:1rem 2rem;
+	width:100%;
+}
+
+#billing.enterPayment .payNowShell .innerShellTop {
+	width:100%;
+	padding:0;
+	background:none;
+	text-align:left;
+	font-size:0.8rem;
+	line-height:150%;
+}
+
+#billing.enterPayment .help_content4, #billing.enterPayment .help_content5 , .content_float{
+	padding:2rem 1rem;
+}
+
+#billing.enterPayment .payNowShell .innerShellTop > b, #billing.enterPayment .help_content4 h4, #billing.enterPayment .help_content5 h4 , .content_float h4 {
+	line-height:1.2em;
+	margin-bottom:15px;
+	font-size:1rem;
+	font-weight:700;
+	/*color:#454545;*/
+	color: #77b53c;
+}
+
+#billing.enterPayment .payNowShell label, #billing.enterPayment .help_content4 p, #billing.enterPayment .help_content5 p, #billing.enterPayment .help_content5 , .content_float{
+	font-size:0.8rem;
+	line-height:150%;
+	color:#454545;
+}
+
+#billing.enterPayment .help_content4 p, #billing.enterPayment .help_content5 p ,.content_float {
+	margin:0.5rem 0;
+}
+
+#billing.enterPayment .payNowShell .ui-input-text {
+	float:left;
+}
+
+#billing.enterPayment .payNowShell .ui-input-text input {
+	background:#fff;
+	width:100%;
+}
+
+#billing.enterPayment #accountInfo .payNowShell .help.ui-link {
+	margin-left:5px;
+	margin-top:7px;
+	display:block;
+	float:left;
+	width:17.1em !important;
+}
+
+#billing.enterPayment #payNowForm .payNowShell .button.cancelBtn {
+	float:left;
+	margin-right:0.5rem;
+}
+
+#billing #payNowForm #progressBar .endCap_left_present .oneLine {
+	height:auto;
+}
+
+#billing #payNowForm #progressBar .progressBar_future .oneLine {
+	background:url('../images/future_step_checkmark.png') center top no-repeat;
+}
+
+#billing.enterPayment #accountInfo {
+	display:flex;
+	flex-direction:column;
+	padding-top:1rem;
+	height: auto;
+}
+
+#billing.enterPayment .radioLabel {
+	padding-left:39px;
+	font-size:1rem;
+	padding-top:5px;
+	width:auto !important;
+}
+
+#billing.enterPayment label[for='mobile_other_0'] > .floatLeft {
+	padding-top:0;
+}
+
+#billing.verification #receiptscreen {
+	margin-top:2rem;
+}
+
+#confirmemailreceipt
+{
+  background-color: #E7E8E9;
+  padding: 3em;
+ /* padding-top: 2em;*/
+}
+
+@media (max-device-width: 767px) and (min-device-width: 320px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 767px) and (min-device-width: 320px), only screen and (-webkit-min-device-pixel-ratio: 2) and (device-height: 720px) and (device-width: 1280px) and (orientation: landscape), (max-width: 767px){
+	#paynowstart li.row {
+    height: auto;
+}
+}
+
+
+/* Error message */
+#billing .error_msg li {
+    background: 0 0;
+    color: #b94a48 !important;
+    padding-left: 0px;
+    font: 1.1em/1.4em Arial, Helvetica, sans-serif;
+}
+ .content_float {
+    margin: 0;
+}
+
+@media (max-device-width: 767px) and (min-device-width: 320px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 767px) and (min-device-width: 320px), only screen and (-webkit-min-device-pixel-ratio: 2) and (device-height: 720px) and (device-width: 1280px) and (orientation: landscape), (max-width: 767px){
+#creditCard .two #expDateYYYY-button {
+    height: auto;
+}
+}
+
+#billing #payNowForm #help_contentrountingnumber .content_float #help_text_images img,
+#billing #payNowForm #help_contentaccountnumber .content_float #help_text_images img {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media only screen and (min-width: 768px){         
+#billing #payNowForm #help_contentrountingnumber .content_float #help_text_images img,
+#billing #payNowForm #help_contentaccountnumber .content_float #help_text_images img {
+    width: 49% !important;
+    margin: 0 !important
+  }            
+}
+#container select:focus {
+	border : 1px solid #66afe9;
+}
+@media only screen and (min-width: 768px){
+#billing.confirmation #receiptscreen #mobileText {
+      display: none;
+}
+}
+@media only screen and (max-width: 768px){
+#billing.confirmation #receiptscreen #desktopText {
+      display: none;
+}
+}
